@@ -1,0 +1,20 @@
+.list {
+  width: 500px;
+  padding: 15px;
+  margin: 0 auto;
+  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+}
+p {
+  text-align: center;
+  margin: 15px 0 15px;
+  font-size: 16px;
+}
+
+.containerList {
+  background: linear-gradient(
+    45deg,
+    rgb(243 227 253) 30%,
+    rgb(155 211 231) 90%
+  );
+  margin: 0 -15px;
+}
