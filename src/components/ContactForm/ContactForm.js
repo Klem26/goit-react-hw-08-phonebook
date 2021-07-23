@@ -39,7 +39,7 @@ class ContactForm extends Component {
   render() {
     const { name, number } = this.state;
     return (
-      <div className={styles.containerForm}>
+      <>
         <form className={styles.form} onSubmit={this.handelSubmit}>
           <label className={styles.labelForm}>
             Name{' '}
@@ -71,7 +71,7 @@ class ContactForm extends Component {
             Add contact
           </button>
         </form>
-      </div>
+      </>
     );
   }
 }

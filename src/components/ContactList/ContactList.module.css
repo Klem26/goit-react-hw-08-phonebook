@@ -1,20 +1,15 @@
 .list {
-  width: 500px;
   padding: 15px;
-  margin: 0 auto;
-  box-shadow: 0 0 15px 4px rgba(0, 0, 0, 0.06);
+  margin: 10px auto;
+  box-shadow: 0 0 15px 4px rgb(232 200 243);
+}
+@media only screen and (min-width: 768px) {
+  .list {
+    width: 500px;
+  }
 }
 p {
   text-align: center;
   margin: 15px 0 15px;
   font-size: 16px;
-}
-
-.containerList {
-  background: linear-gradient(
-    45deg,
-    rgb(243 227 253) 30%,
-    rgb(155 211 231) 90%
-  );
-  margin: 0 -15px;
 }

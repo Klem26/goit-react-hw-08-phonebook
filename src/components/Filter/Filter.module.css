@@ -1,7 +1,12 @@
 .filter {
-  width: 500px;
   margin: 0 auto;
-  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+@media only screen and (min-width: 768px) {
+  .filter {
+    width: 500px;
+  }
 }
 
 .inputFilter {
@@ -9,23 +14,13 @@
   margin: 10px 0;
   width: 100%;
   border: 0;
-  color: #1a6380;
-  box-shadow: 0 0 15px 4px rgba(13, 140, 160, 0.06);
+  color: #8a5dee;
+  box-shadow: 0 0 15px 4px rgb(232 200 243);
 }
 
 .labelForm {
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
   font-weight: 600;
-  color: #1a6380;
-}
-
-.containerFilter {
-  background: linear-gradient(
-    45deg,
-    rgb(243 227 253) 30%,
-    rgb(172 214 235) 90%
-  );
-  margin: 0 -15px;
-  min-height: 400px;
+  color: #8a5dee;
 }

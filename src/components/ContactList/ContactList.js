@@ -14,7 +14,7 @@ class ContactList extends Component {
   render() {
     const { contacts, onDeleteContacts, isLoadingContacts, error } = this.props;
     return (
-      <div className={styles.containerList}>
+      <div>
         {isLoadingContacts && <Loader />}
         {error && <p>There is no contact on your list</p>}
         <ul className={styles.list}>

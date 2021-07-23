@@ -8,18 +8,16 @@ import contactsSelectors from '../../redux/form/contacts-selectors';
 
 const Filter = ({ value, onChange }) => {
   return (
-    <div className={styles.containerFilter}>
-      <div className={styles.filter}>
-        <label className={styles.labelForm}>
-          Find contacts by name
-          <input
-            className={styles.inputFilter}
-            type="text"
-            value={value}
-            onChange={onChange}
-          />
-        </label>
-      </div>
+    <div className={styles.filter}>
+      <label className={styles.labelForm}>
+        Find contacts by name
+        <input
+          className={styles.inputFilter}
+          type="text"
+          value={value}
+          onChange={onChange}
+        />
+      </label>
     </div>
   );
 };

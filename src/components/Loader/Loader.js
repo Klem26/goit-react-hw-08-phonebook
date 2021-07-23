@@ -9,7 +9,7 @@ export default class App extends React.Component {
       <div className={styles.loader}>
         <Loader
           type="Bars"
-          color="#81abab"
+          color="rgb(243 187 195)"
           height={60}
           width={60}
           timeout={3000}
