@@ -1,7 +1,7 @@
 import React, { Component, Suspense, lazy } from 'react';
 import { Switch } from 'react-router-dom';
 import Container from './components/Container';
-import AppBar from './components/AppBar';
+import AppBar from './components/AppBar/AppBar';
 import { authOperations } from './redux/auth';
 import { connect } from 'react-redux';
 import PrivateRoute from './components/PrivateRoute';
@@ -9,16 +9,20 @@ import PublicRoute from './components/PublicRoute';
 import Loader from './components/Loader';
 
 const HomeView = lazy(() =>
-  import('./views/HomeView' /* webpackChunkName: "home-page" */),
+  import('./views/Home/HomeView' /* webpackChunkName: "home-page" */),
 );
 const LoginView = lazy(() =>
-  import('./views/LoginView' /* webpackChunkName: "login-page" */),
+  import('./views/Login/LoginView' /* webpackChunkName: "login-page" */),
 );
 const RegisterView = lazy(() =>
-  import('./views/RegisterView' /* webpackChunkName: "register-page" */),
+  import(
+    './views/Register/RegisterView' /* webpackChunkName: "register-page" */
+  ),
 );
 const ContactsView = lazy(() =>
-  import('./views/ContactsView' /* webpackChunkName: "contacts-page" */),
+  import(
+    './views/ContactsView/ContactsView' /* webpackChunkName: "contacts-page" */
+  ),
 );
 
 class App extends Component {
